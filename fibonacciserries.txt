@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace assing
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            int n1 = 0, n2 = 1, n3 = 2, i, x;
+            Console.WriteLine("enter the number x");
+            x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Fibonacci series:");
+           Console.Write(n1 + " " + n2 + " ");
+            for (i = 2; i < x; ++i)
+            {
+                n3 = n1 + n2;
+                Console.Write(n3 + " ");
+                n1 = n2;
+                n2 = n3;
+
+
+
+            }
+            Console.ReadKey();
+        }
+    }
+}
